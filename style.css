@@ -1,0 +1,93 @@
+body {
+    /* background-image: url('img/bg.png'); */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Pixelify Sans', sans-serif; */
+    color: #333;
+    font-size: 16px;
+    /* line-height: 1.5; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* overflow: hidden; */
+}
+
+h1 {
+    font-size: 5em;
+    font-family: 'Pixelify Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    overflow: hidden;
+}
+
+h1 span {
+    display: inline-block;
+    animation: wave 1.5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.1s); /* Delay based on index */
+}
+    
+
+/* Define the wave animation */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Adjust height of the wave */
+    }
+}
+
+/* Assign a custom property for each letter's delay */
+h1 span:nth-child(1) { --i: 0; }
+h1 span:nth-child(2) { --i: 1; }
+h1 span:nth-child(3) { --i: 2; }
+h1 span:nth-child(4) { --i: 3; }
+h1 span:nth-child(5) { --i: 4; }
+h1 span:nth-child(6) { --i: 5; }
+h1 span:nth-child(7) { --i: 6; }
+h1 span:nth-child(8) { --i: 7; }
+h1 span:nth-child(9) { --i: 8; }
+h1 span:nth-child(10) { --i: 9; }
+h1 span:nth-child(11) { --i: 10; }
+
+div.Header {
+    position: fixed;
+    display: flex;
+    background-color: pink;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 10vw; */
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+div.Header.shrink {
+    height: 15vh;
+}
+
+div.Header h1 {
+    font-size: 5em;
+    transition: all 0.3s ease;
+    transform: translateX(0vw);
+}
+
+div.Header.shrink h1 {
+    font-size: 2em;
+    transform: translateX(0vw);
+}
+
+div.content {
+    height: 200vh;
+    margin-top: 55vh;
+}
