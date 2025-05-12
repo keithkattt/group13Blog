@@ -418,7 +418,7 @@ span.firstLetter {
     
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     div.Header {
         height: 100vh;
     }
@@ -426,7 +426,7 @@ span.firstLetter {
         height: 10vh;
     }
     div.Header h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     div.Header.shrink h1 span {
         font-size: 0.8em;
