@@ -137,8 +137,17 @@ img.tiktokBanner, a#tiktokBanner {
     justify-self: center;
 }
 
-div.content .mainContentHeader, #headerSubtext{
+#headerSubtext {
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 8vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mainContentHeader {
+      font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 8vh;
     margin: 0;
@@ -213,13 +222,6 @@ h3#thirdSubHeader {
 .footer p {
     margin: 0.5em 0;
     letter-spacing: 0.5px;
-}
-
-@media (max-width: 700px) {
-    .footer {
-        font-size: 1rem;
-        padding: 1rem 0 0.5rem 0;
-    }
 }
 
 p#headerSubtext {
@@ -385,10 +387,12 @@ span.firstLetter {
     }
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
+    
     div.Header {
         height: 100vh;
     }
+
     div.Header.shrink {
         height: 10vh;
     }
@@ -412,4 +416,88 @@ span.firstLetter {
         margin-bottom: 5vh;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    div.Header {
+        height: 100vh;
+    }
+    div.Header.shrink {
+        height: 10vh;
+    }
+    div.Header h1 {
+        font-size: 2em;
+    }
+    div.Header.shrink h1 span {
+        font-size: 0.8em;
+    }
+    div.content{
+        margin-top: 35vh;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px 1rem 20px 1rem;
+        font-size: 2em;
+    }
+    span.firstLetter {
+    display: inline-block;
+    font-size: 2vh;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    }
+
+    a.articleLink {
+    color: #00d0db;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2vh;
+    }
+
+    p.mainText{
+        font-size: 2vh;
+    }
+
+    p#headerSubtext {
+        font-size: 0.5em;
+    }
+
+    div.content h2 {
+        font-size: 3vh;
+    }
+
+    #secondSubHeader {
+        font-size: 2vh;
+    }
+    
+    img#phoneImage, #mentalHealthImage, #kidsImage {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        max-width: 100vw;
+        align-self: center;
+        box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+        margin: 3vh 0 3vh 0;
+    }
+
+    img.tiktokBanner, a#tiktokBanner {
+        width: 100%;
+        height: auto;
+        max-width: 100vw;
+        max-height: 30vh;
+        background-color: black;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        border-radius: 30px;
+        box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+        align-self: center;
+        justify-self: center;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        font-size: 1rem;
+        padding: 1rem 0 0.5rem 0;
+    }
 }
