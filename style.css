@@ -1,28 +1,27 @@
 body {
-    /* background-image: url('img/bg.png'); */
     box-sizing: border-box; 
+    background: linear-gradient(135deg, #222831 0%, #00ADB5 40%, #393E46 70%, #FF2E63 100%);
     margin: 0;
     padding: 0;
-    /* font-family: 'Pixelify Sans', sans-serif; */
-    color: #333;
+    color: #EEEEEE;
     font-size: 16px;
-    /* line-height: 1.5; */
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    /* line-height: 1.5; */
+    /* text-align: center; */
     /* height: 100vh; */
     /* width: 100vw; */
     /* overflow: hidden; */
 }
 
 h1 {
-    font-size: 5em;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 100em;
+    font-family: 'Bebas Neue', sans-serif;
     margin: 0;
     padding: 20px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: white;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
     display: inline-block;
     overflow: hidden;
 }
@@ -35,14 +34,14 @@ h1 span {
     
 
 /* Define the wave animation */
-@keyframes wave {
+  @keyframes wave {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(-5px); /* Adjust height of the wave */
     }
-}
+} 
 
 /* Assign a custom property for each letter's delay */
 h1 span:nth-child(1) { --i: 0; }
@@ -56,11 +55,23 @@ h1 span:nth-child(8) { --i: 7; }
 h1 span:nth-child(9) { --i: 8; }
 h1 span:nth-child(10) { --i: 9; }
 h1 span:nth-child(11) { --i: 10; }
+h1 span:nth-child(12) { --i: 11; }
+h1 span:nth-child(13) { --i: 12; }
+h1 span:nth-child(14) { --i: 13; }
+h1 span:nth-child(15) { --i: 14; }
+h1 span:nth-child(16) { --i: 15; }
+h1 span:nth-child(17) { --i: 16; }
+h1 span:nth-child(18) { --i: 17; }
+h1 span:nth-child(19) { --i: 18; }
+h1 span:nth-child(20) { --i: 19; }
+h1 span:nth-child(21) { --i: 20; }
+
+
 
 div.Header {
     position: fixed;
     display: flex;
-    background-color: pink;
+    background-color: #222831;
     top: 0;
     height: 100vh;
     width: 100vw;
@@ -73,13 +84,14 @@ div.Header {
 }
 
 div.Header.shrink {
-    height: 15vh;
+    height: 10vh;
 }
 
 div.Header h1 {
-    font-size: 5em;
+    font-size: 8em;
     transition: all 0.3s ease;
     transform: translateX(0vw);
+    
 }
 
 div.Header.shrink h1 {
@@ -88,6 +100,316 @@ div.Header.shrink h1 {
 }
 
 div.content {
-    height: 200vh;
-    margin-top: 55vh;
+    display: flex;   
+    padding: 40px 10rem 40px 10rem;
+    background-color: #393E46;
+    border-radius: 30px;
+    flex-direction: column;
+    margin-top: 60vh;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    border: 3px solid #00ADB5;
+    margin-right: 10rem;
+    font-size: 5em;
+}
+
+img#phoneImage, #mentalHealthImage, #kidsImage {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    max-width: 50vw;
+    align-self: center;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    margin: 3vh 0 3vh 0;
+}
+
+img.tiktokBanner, a#tiktokBanner {
+    width: 100%;
+    height: auto;
+    max-width: 50vw;
+    max-height: 30vh;
+    background-color: black;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    border-radius: 30px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    align-self: center;
+    justify-self: center;
+}
+
+div.content .mainContentHeader, #headerSubtext{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 8vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div.secondSection {
+    background-color: rgb(34, 40, 49);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 2rem;
+    margin-top: 5vh;
+}
+
+h2.subheader  {
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    font-size: 4rem;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0;
+}
+
+h2#fourthSection {
+    align-self: flex-start;
+    padding: 3rem 0 1rem 0;
+}
+
+h2#secondSubHeader {
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+h3#thirdSubHeader {
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+.footer {
+    width: 100%;
+    background: linear-gradient(90deg, #222831 0%, #393E46 100%);
+    color: #EEEEEE;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border-top: 3px solid #00ADB5;
+    margin-top: 0;
+    box-shadow: 0 -4px 18px rgba(0,0,0,0.2);
+}
+
+.footer p {
+    margin: 0.5em 0;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        font-size: 1rem;
+        padding: 1rem 0 0.5rem 0;
+    }
+}
+
+p#headerSubtext {
+    font-weight: normal;
+    font-size: 3vh;
+    
+}
+
+a.articleLink {
+    color: #00d0db;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+p.mainText {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #EEEEEE;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+span.firstLetter {
+    display: inline-block;
+    font-size: 5vh;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.text-shadow-pop-left {
+	animation: text-shadow-pop-left 0.6s both;
+}
+
+
+@keyframes text-shadow-pop-left {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    transform: translateX(0);
+  }
+  100% {
+    text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
+    transform: translateX(8px);
+  }
+}
+
+.shadow-dance-text {
+    font-size: 4rem;
+    color: black;
+    text-shadow: 2px 2px 8px #222, 0 0 0 #ff005e, 0 0 0 #00d4ff;
+    animation: shadow-dance 2s infinite;
+}
+
+@keyframes shadow-dance {
+    0%, 100% {
+        text-shadow: 5px 5px 0 #00bcd4, 10px 10px 0 #ff1744;
+    }
+    50% {
+        text-shadow: -5px -5px 0 #00bcd4, -10px -10px 0 #ff1744;
+    }
+}
+
+.strobing-red {
+    color: #ffffff;
+    animation: strobe-letter 3s infinite;
+    display: inline-block;
+}
+
+.strobing-red:nth-child(1)  { animation-delay: 0s; }
+.strobing-red:nth-child(2)  { animation-delay: 0.05s; }
+.strobing-red:nth-child(3)  { animation-delay: 0.10s; }
+.strobing-red:nth-child(4)  { animation-delay: 0.15s; }
+.strobing-red:nth-child(5)  { animation-delay: 0.20s; }
+.strobing-red:nth-child(6)  { animation-delay: 0.25s; }
+.strobing-red:nth-child(7)  { animation-delay: 0.30s; }
+.strobing-red:nth-child(8)  { animation-delay: 0.35s; }
+.strobing-red:nth-child(9)  { animation-delay: 0.40s; }
+.strobing-red:nth-child(10) { animation-delay: 0.45s; }
+.strobing-red:nth-child(11) { animation-delay: 0.50s; }
+.strobing-red:nth-child(12) { animation-delay: 0.55s; }
+.strobing-red:nth-child(13) { animation-delay: 0.60s; }
+.strobing-red:nth-child(14) { animation-delay: 0.65s; }
+.strobing-red:nth-child(15) { animation-delay: 0.70s; }
+.strobing-red:nth-child(16) { animation-delay: 0.75s; }
+.strobing-red:nth-child(17) { animation-delay: 0.80s; }
+.strobing-red:nth-child(18) { animation-delay: 0.85s; }
+.strobing-red:nth-child(19) { animation-delay: 0.90s; }
+.strobing-red:nth-child(20) { animation-delay: 0.95s; }
+.strobing-red:nth-child(21) { animation-delay: 1.00s; }
+.strobing-red:nth-child(22) { animation-delay: 1.05s; }
+.strobing-red:nth-child(23) { animation-delay: 1.10s; }
+.strobing-red:nth-child(24) { animation-delay: 1.15s; }
+.strobing-red:nth-child(25) { animation-delay: 1.20s; }
+.strobing-red:nth-child(26) { animation-delay: 1.25s; }
+.strobing-red:nth-child(27) { animation-delay: 1.30s; }
+.strobing-red:nth-child(28) { animation-delay: 1.35s; }
+.strobing-red:nth-child(29) { animation-delay: 1.40s; }
+.strobing-red:nth-child(30) { animation-delay: 1.45s; }
+
+@keyframes strobe-letter {
+    0%, 100% {
+        color: #ffffff;
+        text-shadow: none;
+    }
+    20%, 30% {
+        color: #ff0000;
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000;
+    }
+}
+
+.glitch-text {
+    font-size: 5rem;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    animation: glitch 2s infinite;
+    /* Add a colorful gradient background clipped to text */
+    background: linear-gradient(90deg, #ff005e, #00d4ff, #39ff14, #fffb00, #ff005e 90%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: glitch 2s infinite, glitch-colors 3s linear infinite;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: inherit;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: glitch 2s infinite, glitch-colors 3s linear infinite;
+}
+
+.glitch-text::before {
+    color: #ff005e;
+    text-shadow: 2px 0 #ff005e;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+}
+
+.glitch-text::after {
+    color: #00d4ff;
+    text-shadow: -2px 0 #00d4ff;
+    clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0 100%);
+}
+
+@keyframes glitch-colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+@media (max-width: 1100px) {
+    div.Header {
+        height: 100vh;
+    }
+    div.Header.shrink {
+        height: 10vh;
+    }
+    div.Header h1 {
+        font-size: 4em;
+    }
+    div.content{
+        margin-top: 35vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 20px 1rem 20px 1rem;
+        font-size: 3em;
+    }
+    div.content h2 {
+        font-size: 5vh;
+        
+    }
+    div.content img {
+        max-width: 100vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    
 }
